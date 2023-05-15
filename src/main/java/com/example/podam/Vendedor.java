@@ -2,6 +2,7 @@ package com.example.podam;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import uk.co.jemos.podam.common.PodamExclude;
 
 public class Vendedor implements Serializable {
 
@@ -11,6 +12,7 @@ public class Vendedor implements Serializable {
 	private String correo;
 	private String telefono;
 	private ArrayList<ArticuloUnitario> artDisponibles;
+	@PodamExclude
 	private ArrayList<ArticuloUnitario> artVendidos;
 	
 	public Vendedor (String nombre, String correo, String telefono) {
